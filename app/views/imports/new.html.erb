@@ -1,0 +1,16 @@
+<div class='center'>
+  Visit <%= link_to('User Home',users_path) %> if already imported.
+
+  <h1>Imports#new</h1>
+
+  <%= form_with model: @import do |form| %>
+    <p>
+      <%= form.file_field :csv_file %>
+    </p>
+    <p>
+      <%= form.submit %>
+    </p>
+  <% end %>
+</div>
+
+
